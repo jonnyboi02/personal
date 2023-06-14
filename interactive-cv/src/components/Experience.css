@@ -1,0 +1,22 @@
+.experience-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .company-logo {
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+  }
+  
+  .company-logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  
+  .experience-details {
+    flex: 1;
+  }
+  

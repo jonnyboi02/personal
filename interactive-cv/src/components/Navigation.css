@@ -1,0 +1,25 @@
+/* Navigation.css */
+  .navigation {
+    background-color: #eee;
+  }
+  
+  .navigation ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .navigation ul li {
+    display: inline;
+    margin-right: 10px;
+  }
+  
+  .navigation ul li a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .navigation ul li a.active {
+    font-weight: bold;
+  }
+  
