@@ -15,12 +15,12 @@ const TestimonialsSection = () => {
       author: 'Pedro de Camara, Teaching Assistant QMUL',
       image: 'https://media.licdn.com/dms/image/C4D03AQH2xZ6VhQPNBQ/profile-displayphoto-shrink_100_100/0/1599930090841?e=1692230400&v=beta&t=6dV3tHmwwydiRSYLK4xKPTkFhMP7VyGgMR7A_r9xiZ4', // Add the path to the image for the second testimonial
     },
-    {
-      id: 3,
-      quote: 'Testimonial 3',
-      author: 'Author 3',
-      image: 'path/to/image3.jpg', // Add the path to the image for the third testimonial
-    },
+    // {
+    //   id: 3,
+    //   quote: 'Testimonial 3',
+    //   author: 'Author 3',
+    //   image: 'path/to/image3.jpg', // Add the path to the image for the third testimonial
+    // },
   ];
 
   const [testimonialIndex, setTestimonialIndex] = useState(0);

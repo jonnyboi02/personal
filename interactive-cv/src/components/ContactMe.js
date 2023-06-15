@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+// import './ContactMe.css';
 
 const ContactMe = () => {
   const [name, setName] = useState('');
@@ -17,10 +18,10 @@ const ContactMe = () => {
   };
 
   return (
-    <section>
+    <section className="section contact-section">
       <h2>Contact Me</h2>
-      <form onSubmit={handleSubmit}>
-        <div>
+      <form className="contact-form" onSubmit={handleSubmit}>
+        <div className="form-group">
           <label htmlFor="name">Name:</label>
           <input
             type="text"
@@ -30,7 +31,7 @@ const ContactMe = () => {
             required
           />
         </div>
-        <div>
+        <div className="form-group">
           <label htmlFor="email">Email:</label>
           <input
             type="email"
@@ -40,7 +41,7 @@ const ContactMe = () => {
             required
           />
         </div>
-        <div>
+        <div className="form-group">
           <label htmlFor="message">Message:</label>
           <textarea
             id="message"
@@ -49,7 +50,7 @@ const ContactMe = () => {
             required
           ></textarea>
         </div>
-        <button type="submit">Submit</button>
+        <button type="submit" className="submit-button">Submit</button>
       </form>
     </section>
   );

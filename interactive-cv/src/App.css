@@ -73,9 +73,8 @@ h2 {
 }
 
 .section.contact-section {
-  background-color: #f8f8f8;
+  background-color: #ffffff;
   padding: 40px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .section.contact-section h2 {
@@ -258,7 +257,7 @@ h2 {
 .section-contact form input,
 .section-contact form textarea {
   padding: 10px;
-  border: 1px solid #ccc;
+  border: 1px solid #ffffff;
   border-radius: 4px;
   width: 300px;
   font-size: 1rem;
