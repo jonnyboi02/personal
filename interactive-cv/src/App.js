@@ -6,6 +6,7 @@ import Skills from './components/Skills';
 import Projects from './components/Projects';
 import ContactMe from './components/ContactMe';
 import TestimonialsSection from './components/TestimonialsSection';
+import ParticlesBackground from './ParticlesBackground';
 import './App.css';
 
 const App = () => {
@@ -14,6 +15,8 @@ const App = () => {
     education: false,
     skills: false,
     projects: false,
+    testimonials: false,
+    contact: false,
   });
 
   const sectionRefs = {
@@ -21,6 +24,8 @@ const App = () => {
     education: useRef(null),
     skills: useRef(null),
     projects: useRef(null),
+    testimonials: useRef(null),
+    contact: useRef(null),
   };
 
   const handleIntersection = (entries) => {
@@ -55,6 +60,7 @@ const App = () => {
 
   return (
     <div className="container">
+      <ParticlesBackground />
       <Header />
       <section
         ref={sectionRefs.experience}
@@ -84,13 +90,20 @@ const App = () => {
       >
         <Projects />
       </section>
-      <section className="section testimonials-section">
+      <section
+        ref={sectionRefs.testimonials}
+        data-section="testimonials"
+        className={`section ${sectionsVisible.testimonials ? 'section-visible' : 'section-hidden'}`}
+      >
         <TestimonialsSection />
       </section>
-      <section className="section contact-section">
+      <section
+        ref={sectionRefs.contact}
+        data-section="contact"
+        className={`section ${sectionsVisible.contact ? 'section-visible' : 'section-hidden'}`}
+      >
         <ContactMe />
       </section>
-
     </div>
   );
 };

@@ -41,6 +41,7 @@ const TestimonialsSection = () => {
         <p className="quote">{testimonialsData[testimonialIndex].quote}</p>
         <p className="author">- {testimonialsData[testimonialIndex].author}</p>
       </div>
+      <br></br>
       <div className="testimonial-buttons">
         <button onClick={handlePreviousTestimonial}>&lt; Previous</button>
         <button onClick={handleNextTestimonial}>Next &gt;</button>

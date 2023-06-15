@@ -1,5 +1,25 @@
 .header {
-    background-color: #333;
-    padding: 20px;
-    color: #fff;
+    transition: transform 0.5s;
   }
+  
+  .animate-pop-in {
+    animation: popInAnimation 0.5s forwards;
+  }
+  
+  .visible {
+    transform: translateX(0);
+  }
+  
+  .hidden {
+    transform: translateX(-100%);
+  }
+  
+  @keyframes popInAnimation {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  
