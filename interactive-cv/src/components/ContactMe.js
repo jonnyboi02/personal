@@ -8,7 +8,7 @@ const ContactMe = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     // Replace 'your-email-address' with your actual email address
-    const emailLink = `mailto:your-email-address?subject=Contact%20Form%20Submission&body=Name:%20${name}%0AEmail:%20${email}%0AMessage:%20${message}`;
+    const emailLink = `mailto:jonathanchiu02@gmail.com?subject=Contact%20Form%20Submission&body=Name:%20${name}%0AEmail:%20${email}%0AMessage:%20${message}`;
     window.location.href = emailLink;
     // Reset the form fields
     setName('');
