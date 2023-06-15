@@ -13,10 +13,11 @@ const Education = () => {
         <h3>Elthorne Park High School</h3>
         <p>A-levels</p>
         <ul>
-          <li>Mathematics (A*)</li>
+        <li>Extended Project (A*)</li>
+          <li>Mathematics (A)</li>
           <li>Further Mathematics (A)</li>
           <li>Computer Science (A)</li>
-          <li>Extended Project (A)</li>
+  
         </ul>
         <p>September 2013 - August 2020</p>
       </div>
