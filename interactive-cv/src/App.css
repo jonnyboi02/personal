@@ -67,62 +67,14 @@ h2 {
   pointer-events: none;
 }
 
-.contact-section {
+.section.contact-section {
   background-color: #f8f8f8;
   padding: 40px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.contact-section h2 {
+.section.contact-section h2 {
   color: #333;
-}
-
-.contact-section form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 20px;
-}
-
-.contact-section form div {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 10px;
-}
-
-.contact-section form label {
-  font-size: 1rem;
-  margin-bottom: 5px;
-}
-
-.contact-section form input,
-.contact-section form textarea {
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  width: 300px;
-}
-
-.contact-section form button {
-  padding: 10px 20px;
-  background-color: #282c34;
-  color: #ffffff;
-  border: none;
-  border-radius: 4px;
-  font-size: 1rem;
-  cursor: pointer;
-}
-
-.contact-section form button:hover {
-  background-color: #1c2025;
-}
-
-
-/* ... Existing CSS rules ... */
-
-.section.contact-section {
-  margin-bottom: 40px;
-  text-align: center;
 }
 
 .section.contact-section form {
@@ -217,4 +169,11 @@ h2 {
 
 .section.testimonials-section .testimonial .navigation-buttons button:hover {
   background-color: #1c2025;
+}
+
+.section.testimonials-section .testimonial-image {
+  width: 100px; /* Adjust the desired width */
+  height: auto; /* Maintain the aspect ratio */
+  border-radius: 50%; /* Make the image circular */
+  object-fit: cover; /* Ensure the image covers the container */
 }

@@ -84,12 +84,13 @@ const App = () => {
       >
         <Projects />
       </section>
-      <section className="section contact-section">
-        <ContactMe />
-      </section>
       <section className="section testimonials-section">
         <TestimonialsSection />
       </section>
+      <section className="section contact-section">
+        <ContactMe />
+      </section>
+
     </div>
   );
 };
