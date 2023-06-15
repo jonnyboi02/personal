@@ -11,13 +11,14 @@ import './App.css';
 
 const App = () => {
   const [sectionsVisible, setSectionsVisible] = useState({
-    experience: false,
-    education: false,
-    skills: false,
-    projects: false,
-    testimonials: false,
-    contact: false,
+    experience: true,
+    education: true,
+    skills: true,
+    projects: true,
+    testimonials: true,
+    contact: true,
   });
+  
 
   const sectionRefs = {
     experience: useRef(null),
@@ -30,21 +31,37 @@ const App = () => {
 
   const handleIntersection = (entries) => {
     entries.forEach((entry) => {
-      const { target, isIntersecting } = entry;
+      const { target, isIntersecting, intersectionRatio } = entry;
       const section = target.getAttribute('data-section');
-
-      setSectionsVisible((prevState) => ({
-        ...prevState,
-        [section]: isIntersecting,
-      }));
+  
+      if (section === 'experience') {
+        setSectionsVisible((prevState) => ({
+          ...prevState,
+          [section]: true,
+        }));
+      } else {
+        if (isIntersecting && intersectionRatio >= 0.3) {
+          setSectionsVisible((prevState) => ({
+            ...prevState,
+            [section]: true,
+          }));
+        } else {
+          setSectionsVisible((prevState) => ({
+            ...prevState,
+            [section]: false,
+          }));
+        }
+      }
     });
   };
+  
+  
 
   useEffect(() => {
     const observer = new IntersectionObserver(handleIntersection, {
       root: null,
       rootMargin: '0px',
-      threshold: 0.3, // Adjust this threshold as needed
+      threshold: 0.4, // Adjust this threshold as needed
     });
 
     Object.values(sectionRefs).forEach((ref) => {
