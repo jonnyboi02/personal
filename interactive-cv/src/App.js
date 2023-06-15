@@ -73,7 +73,7 @@ const App = () => {
     return () => {
       observer.disconnect();
     };
-  }, []);
+  }, [sectionRefs]);
 
   return (
     <div className="container">
