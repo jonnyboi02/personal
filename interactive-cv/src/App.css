@@ -131,6 +131,13 @@ h2 {
   background-color: #1c2025;
 }
 
+@media (max-width: 480px) {
+  .section.contact-section form input,
+  .section.contact-section form textarea {
+    width: 100%; /* Adjust the width to fit the container */
+  }
+}
+
 .section.testimonials-section {
   margin-bottom: 40px;
   text-align: center;
