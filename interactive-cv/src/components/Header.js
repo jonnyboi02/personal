@@ -28,7 +28,7 @@ const Header = () => {
 
   return (
     <header ref={headerRef} className={`header ${isHeaderVisible ? 'visible' : 'hidden'}`}>
-      <h1>Jonathan Chiu</h1>
+      <h1 id="name">Jonathan Chiu</h1>
     </header>
   );
 };

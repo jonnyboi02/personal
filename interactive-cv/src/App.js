@@ -79,6 +79,7 @@ const App = () => {
     <div className="container">
       <ParticlesBackground />
       <Header />
+      
       <section
         ref={sectionRefs.experience}
         data-section="experience"
@@ -107,6 +108,7 @@ const App = () => {
       >
         <Projects />
       </section>
+
       <section
         ref={sectionRefs.testimonials}
         data-section="testimonials"
@@ -119,8 +121,22 @@ const App = () => {
         data-section="contact"
         className={`section ${sectionsVisible.contact ? 'section-visible' : 'section-hidden'}`}
       >
+        
         <ContactMe />
       </section>
+
+      <footer>
+      <div class="footer-content">
+        <p>&copy; 2023 Jonathan Chiu &nbsp; 🎲 &nbsp; All Rights Reserved</p>
+        {/* <ul class="social-icons">
+          <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+          <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+          <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+          <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+        </ul> */}
+      </div>
+    </footer>
+
     </div>
   );
 };

@@ -41,4 +41,5 @@ li {
     color: #666666;
     display: inline-block;
     margin-right: 10px;
+    list-style-type: square;
   }
