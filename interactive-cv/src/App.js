@@ -31,29 +31,19 @@ const App = () => {
 
   const handleIntersection = (entries) => {
     entries.forEach((entry) => {
-      const { target, isIntersecting, intersectionRatio } = entry;
+      const { target, isIntersecting } = entry;
       const section = target.getAttribute('data-section');
   
-      if (section === 'experience') {
+      // If the section is intersecting, set it to visible and keep it visible.
+      if (isIntersecting) {
         setSectionsVisible((prevState) => ({
           ...prevState,
           [section]: true,
         }));
-      } else {
-        if (isIntersecting && intersectionRatio >= 0.3) {
-          setSectionsVisible((prevState) => ({
-            ...prevState,
-            [section]: true,
-          }));
-        } else {
-          setSectionsVisible((prevState) => ({
-            ...prevState,
-            [section]: false,
-          }));
-        }
       }
     });
   };
+  
   
   
 

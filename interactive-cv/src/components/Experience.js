@@ -30,7 +30,7 @@ return (
     </div>
     <h3>Microsoft</h3>
     <img src="https://img.freepik.com/free-icon/microsoft_318-566086.jpg" alt="Microsoft" />
-    <h4>Technology Trainee</h4>
+    <h4>Spring Intern</h4>
     <p>Apr 2023 - June 2023 · 3 mos</p>
     <ul>
     <li>Acquired a coveted position in the Trainee Program, providing a solid foundation in various technical domains.</li>
@@ -43,8 +43,6 @@ return (
     <h3>Queen Mary University of London</h3>
     <img src="https://play-lh.googleusercontent.com/ZmHoEDYt50P1woEhpw_4dXb2Lx7Uzy20tRAOODnRJECkeiZCTAqdX0ZBkHe2VVVO-B8" alt="qmul" />
     <p>1 yr 10 mos</p>
-    <h4>Course Representative</h4>
-    <p>Nov 2022 - June 2023 · 8 mos</p>
     <h4>Teaching Assistant</h4>
     <p>Sep 2021 - June 2023 · 1 yr 10 mos</p>
     <ul>
