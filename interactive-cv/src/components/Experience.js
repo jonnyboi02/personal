@@ -5,16 +5,16 @@ return (
 <section >
     <h2>Experience</h2>
 <div>
-    <p>Solving problems through Software.</p>
+    {/* <p>Problem Solver. Driving Solutions</p> */}
     <div>
     <h3>DXC Technology</h3>
     <img src="https://yt3.googleusercontent.com/TESqcRlBgqYVFSnDTs5syiIq1oDmtkbTOjMwbM2YB6z0vwcfECzu2987I9_6GR6LtkQXH5L0KhE=s900-c-k-c0x00ffffff-no-rj" alt="DXC" />
     <h4>Software Engineer</h4>
     <p>Oct 2023 - Present</p>
     <ul>
-    <li>Delivered transformative digital solutions to global clients, reducing their maintenance costs by up to 30% and accelerating product launches by leveraging integrated, data-driven systems.</li>
-    <li>Employed analytics and innovative application approaches to enhance customer and employee experiences, enabling clients topenetrate new markets and launch products with minimized disruption.</li>
-    <li>Developed and presented compelling, client-focused presentations, translating complex technological strategies into clear business-aligned solutions for diverse industry leaders.</li>
+    <li className="list-item-tick">Delivered transformative digital solutions to global clients, reducing their maintenance costs by up to 30% and accelerating product launches by leveraging integrated, data-driven systems.</li>
+    <li className="list-item-tick">Employed analytics and innovative application approaches to enhance customer and employee experiences, enabling clients topenetrate new markets and launch products with minimized disruption.</li>
+    <li className="list-item-tick">Developed and presented compelling, client-focused presentations, translating complex technological strategies into clear business-aligned solutions for diverse industry leaders.</li>
     </ul>
     </div>
     <div>
@@ -23,9 +23,9 @@ return (
     <h4>Android/IOS Software Engineer</h4>
     <p>Jan 2022 - Present</p>
     <ul>
-    <li>Developed a Web Application utilizing React to create a 21% increase in product performance and a 35% increase in user engagement.</li>
-    <li>Implemented continuous integration and delivery practices to ensure proper code deployment.</li>
-    <li>Implemented continuous integration and delivery, and unit testing, resulting in a 35% reduction in errors and improved code reliability and maintainability.</li>
+    <li className="list-item-tick">Developed a Web Application utilizing React to create a 21% increase in product performance and a 35% increase in user engagement.</li>
+    <li className="list-item-tick">Implemented continuous integration and delivery practices to ensure proper code deployment.</li>
+    <li className="list-item-tick">Implemented continuous integration and delivery, and unit testing, resulting in a 35% reduction in errors and improved code reliability and maintainability.</li>
     </ul>
     </div>
     <h3>Microsoft</h3>
@@ -33,10 +33,10 @@ return (
     <h4>Spring Intern</h4>
     <p>Apr 2023 - June 2023 · 3 mos</p>
     <ul>
-    <li>Acquired a coveted position in the Trainee Program, providing a solid foundation in various technical domains.</li>
-    <li>Proactively networked with fellow trainees and industry professionals, facilitating knowledge exchange and fostering strong professional relationships.</li>
-    <li>Gained hands-on experience by shadowing Azure specialists, deepening understanding of cloud architecture, deployment, and management.</li>
-    <li>Benefited from industry-leading mentors and regular feedback, resulting in continuous professional growth and development.</li>
+    <li className="list-item-tick">Acquired a coveted position in the Trainee Program, providing a solid foundation in various technical domains.</li>
+    <li className="list-item-tick">Proactively networked with fellow trainees and industry professionals, facilitating knowledge exchange and fostering strong professional relationships.</li>
+    <li className="list-item-tick">Gained hands-on experience by shadowing Azure specialists, deepening understanding of cloud architecture, deployment, and management.</li>
+    <li className="list-item-tick">Benefited from industry-leading mentors and regular feedback, resulting in continuous professional growth and development.</li>
     </ul>
     </div>
     <div>
@@ -46,19 +46,19 @@ return (
     <h4>Teaching Assistant</h4>
     <p>Sep 2021 - June 2023 · 1 yr 10 mos</p>
     <ul>
-    <li>Taught Algorithms & Data Structures, Software Engineering, Procedural Programming, Logic & Discrete Structures, and Probability and Matrices to first and second-year students.</li>
-    <li>Invented and created questions for the modules taught and monitored examinations.</li>
-    <li>Praised by professors for providing precise and concise explanations of code and emphasizing writing clean code.</li>
+    <li className="list-item-tick">Taught Algorithms & Data Structures, Software Engineering, Procedural Programming, Logic & Discrete Structures, and Probability and Matrices to first and second-year students.</li>
+    <li className="list-item-tick">Invented and created questions for the modules taught and monitored examinations.</li>
+    <li className="list-item-tick">Praised by professors for providing precise and concise explanations of code and emphasizing writing clean code.</li>
     </ul>
     </div>
     <div>
     <h4>Blockchain Research Engineering Intern</h4>
     <p>Jun 2022 - Sep 2022 · 4 mos</p>
     <ul>
-    <li>Checked the Contextual Equivalence of programs in Ethereum Smart Contracts to find bugs by using Operational and Game Semantics in collaboration with Trinity College Dublin.</li>
-    <li>Optimized program execution efficiency by improving code coverage accuracy by 5% and decreasing execution time by 20%.</li>
-    <li>Translated Ethereum smart contracts into HOBBIT.</li>
-    <li>Developed programming skills in OCaml and gained familiarity with the Blockchain by writing smart contracts using Solidity.</li>
+    <li className="list-item-tick">Checked the Contextual Equivalence of programs in Ethereum Smart Contracts to find bugs by using Operational and Game Semantics in collaboration with Trinity College Dublin.</li>
+    <li className="list-item-tick">Optimized program execution efficiency by improving code coverage accuracy by 5% and decreasing execution time by 20%.</li>
+    <li className="list-item-tick">Translated Ethereum smart contracts into HOBBIT.</li>
+    <li className="list-item-tick">Developed programming skills in OCaml and gained familiarity with the Blockchain by writing smart contracts using Solidity.</li>
     </ul>
     </div>
     <div>
@@ -69,7 +69,7 @@ return (
     <p>Mar 2022 - June 2023 · 1 yr 4 mos</p>
 
     <ul>
-    <li>Taught various students in subjects including Computer Science, Further Mathematics, and Mathematics up to A level.</li>
+    <li className="list-item-tick">Taught various students in subjects including Computer Science, Further Mathematics, and Mathematics up to A level.</li>
     </ul>
     </div>
     <div>
@@ -78,25 +78,26 @@ return (
     <h4>Finance Operations Engineering Intern</h4>
     <p>Aug 2019 · 1 mo</p>
     <ul>
-    <li>Successfully developed and implemented a cutting-edge algorithm using Java to merge data sets, resulting in a remarkable 7% improvement in the live environment.</li>
-    <li>Acquired valuable expertise in the Murex System and effectively migrated the test environment of Trading software, reducing run time by 5%.</li>
-    <li>Experience in IT infrastructure and Operations Engineering with the Murex System and aspects of back-end development.</li>
+    <li className="list-item-tick">Successfully developed and implemented a cutting-edge algorithm using Java to merge data sets, resulting in a remarkable 7% improvement in the live environment.</li>
+    <li className="list-item-tick">Acquired valuable expertise in the Murex System and effectively migrated the test environment of Trading software, reducing run time by 5%.</li>
+    <li className="list-item-tick">Experience in IT infrastructure and Operations Engineering with the Murex System and aspects of back-end development.</li>
     </ul>
     </div>
     <div>
     <h4>IT Infrastructure Intern, Rabobank</h4>
     <p>Jul 2018 · 1 mo</p>
     <ul>
-    <li>Exceeded expectations by delivering a complete system design by the deadline using Visio software based on a specification given by the Project Manager at IT infrastructure.</li>
-    <li>Delivered a presentation to experts in the banking sector by researching the banking industry's challenges and collaborating with a team of 4.</li>
+    <li className="list-item-tick">Exceeded expectations by delivering a complete system design by the deadline using Visio software based on a specification given by the Project Manager at IT infrastructure.</li>
+    <li className="list-item-tick">Delivered a presentation to experts in the banking sector by researching the banking industry's challenges and collaborating with a team of 4.</li>
     </ul>
     </div>
     <div>
-    <h3>Content Creator, YouTube</h3>
+    <h3>YouTube</h3>
+    <h4>Content Creator</h4>
     <p>Dec 2013 - Jan 2018 · 4 yrs 2 mos</p>
     <ul>
-    <li>Created a YouTube channel with over 10,000 subscribers, focusing on technology topics.</li>
-    <li>Generated over 2 million views on the channel.</li>
+    <li className="list-item-tick">Created a YouTube channel with over 10,000 subscribers, focusing on technology topics.</li>
+    <li className="list-item-tick">Generated over 2 million views on the channel.</li>
     </ul>
 </div>
 </section>

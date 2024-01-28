@@ -27,3 +27,23 @@
     color: rgb(255, 255, 255);
   }
   
+
+
+  .typing-effect {
+    border-right: 2px solid;
+    white-space: nowrap;
+    overflow: hidden;
+    color: white;
+    animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+  }
+  
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 50% }
+  }
+  
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: black }
+  }
+  
