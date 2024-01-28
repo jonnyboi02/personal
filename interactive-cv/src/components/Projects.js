@@ -2,6 +2,7 @@ import React from 'react';
 import crypto from './assets/crypto.png'
 import stock from './assets/stockmarket.png'
 import weather from './assets/weather.png'
+import epq from './assets/epq.png'
 import './Projects.css'
 
 const Projects = () => {
@@ -36,6 +37,7 @@ return (
     <p>
     Conducted research on Bitcoin, with a focus on the workings of the cryptocurrency and the Blockchain. Emphasized cryptography and abstract algebra in the study.
     </p>
+    <img className='projects' src={epq}></img>
 </div>
 </section>
 );

@@ -7,7 +7,7 @@ import Projects from './components/Projects';
 import ContactMe from './components/ContactMe';
 import TestimonialsSection from './components/TestimonialsSection';
 import Particles from "react-particles";
-
+import Footer from './components/Footer'
 import { loadSlim } from "tsparticles-slim";
 
 import './App.css';
@@ -20,6 +20,7 @@ const App = () => {
     projects: true,
     testimonials: true,
     contact: true,
+    footer: true
   });
   
   const sectionRefs = {
@@ -29,6 +30,7 @@ const App = () => {
     projects: useRef(null),
     testimonials: useRef(null),
     contact: useRef(null),
+    footer: useRef(null),
   };
 
   const handleIntersection = (entries) => {
@@ -167,6 +169,13 @@ const App = () => {
         <Experience />
       </section>
       <section
+        ref={sectionRefs.testimonials}
+        data-section="testimonials"
+        className={`section ${sectionsVisible.testimonials ? 'section-visible' : 'section-hidden'}`}
+      >
+        <TestimonialsSection />
+      </section>
+      <section
         ref={sectionRefs.education}
         data-section="education"
         className={`section ${sectionsVisible.education ? 'section-visible' : 'section-hidden'}`}
@@ -188,13 +197,7 @@ const App = () => {
         <Projects />
       </section>
 
-      <section
-        ref={sectionRefs.testimonials}
-        data-section="testimonials"
-        className={`section ${sectionsVisible.testimonials ? 'section-visible' : 'section-hidden'}`}
-      >
-        <TestimonialsSection />
-      </section>
+     
       <section
         ref={sectionRefs.contact}
         data-section="contact"
@@ -204,17 +207,16 @@ const App = () => {
         <ContactMe />
       </section>
 
-      <footer>
-      <div class="footer-content">
-        <p>&copy; 2023 Jonathan Chiu &nbsp; 🎲 &nbsp; All Rights Reserved</p>
-        {/* <ul class="social-icons">
-          <li><a href="#"><i class="fab fa-facebook"></i></a></li>
-          <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-          <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-          <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
-        </ul> */}
-      </div>
-    </footer>
+      <section>      
+        <footer>
+        <div class="footer-content"  ref={sectionRefs.footer}
+        data-section="footer"
+        className={`section ${sectionsVisible.footer ? 'section-visible' : 'section-hidden'}`}>
+<Footer/>
+        </div>
+      </footer>
+    </section>
+
 
     </div>
   );

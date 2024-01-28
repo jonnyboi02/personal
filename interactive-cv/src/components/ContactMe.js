@@ -19,7 +19,8 @@ const ContactMe = () => {
 
   return (
     <section className="section contact-section">
-      <h2>Contact Me</h2>
+      <h2>Captivated by What You've Seen? Let's Collaborate!</h2>
+      <p>If my portfolio has sparked your interest and you're enthused by the caliber of work I've showcased, I would be delighted to discuss how we can bring similar innovation and excellence to your projects. Don't hesitate to reach out and initiate a conversation. Let's explore the possibilities together and turn your vision into reality. I'm excited about the prospect of working with dynamic partners and clients like you, who value impactful and creative solutions. Contact me today, and let's embark on a journey of successful collaboration!</p>
       <form className="contact-form" onSubmit={handleSubmit}>
         <div className="form-group">
           <label htmlFor="name">Name:</label>
